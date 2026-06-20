@@ -1,18 +1,171 @@
 {
-  "usuarios": [
+  "books": [
     {
-      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
-      "login": "admin",
-      "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
+      "id": 1,
+      "title": "O Senhor dos Anéis",
+      "author": "J.R.R. Tolkien",
+      "destaque": false,
+      "year": 1954,
+      "nota": 9.5,
+      "image": "https://m.media-amazon.com/images/I/81hCVEC0ExL._UF1000,1000_QL80_.jpg",
+      "favoritados": 1000,
+      "descriptionCheia": "Uma épica aventura de fantasia que segue a jornada de um hobbit chamado Frodo Bolseiro para destruir um anel poderoso e salvar a Terra Média.",
+      "descriptionCurta": "Uma épica aventura de fantasia que segue a jornada de um hobbit chamado Frodo Bolseiro para destruir um anel poderoso e salvar a Terra Média.",
+      "categoria": ["Fantasia", "Aventura"]
     },
     {
-      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
+      "id": 2,
+      "title": "Fahrenheit 451",
+      "author": "Ray Bradbury",
+      "destaque": true,
+      "nota": 10,
+      "image": "https://m.media-amazon.com/images/I/61sKsbPb5GL._AC_UF1000,1000_QL80_.jpg",
+      "favoritados": 900,
+      "year": 1953,
+      "descriptionCheia": "Em um futuro distópico, os bombeiros queimam livros para controlar a informação e manter a sociedade ignorante. O protagonista, Guy Montag, começa a questionar essa realidade e busca conhecimento.",
+      "descriptionCurta": "Em um futuro distópico, os bombeiros queimam livros para controlar a informação e manter a sociedade ignorante. O protagonista, Guy Montag, começa a questionar essa realidade e busca conhecimento.",
+      "categoria": ["Distopia", "Ficção Científica"]
+    },
+    {
+      "id": 4,
+      "title": "1984",
+      "author": "George Orwell",
+      "destaque": true,
+      "nota": 10,
+      "image": "https://m.media-amazon.com/images/I/61t0bwt1s3L._AC_UF1000,1000_QL80_.jpg",
+      "favoritados": 850,
+      "year": 1948,
+      "descriptionCheia": "Em um regime totalitário onde o governo controla tudo, Winston Smith luta para manter sua individualidade e liberdade em meio à vigilância constante e à manipulação da verdade.",
+      "descriptionCurta": "Em um regime totalitário onde o governo controla tudo, Winston Smith luta para manter sua individualidade e liberdade em meio à vigilância constante e à manipulação da verdade.",
+      "categoria": ["Distopia", "Ficção Científica"]
+    },
+    {
+      "id": 3,
+      "title": "O Flores para Algernon",
+      "destaque": true,
+      "nota": 10,
+      "image": "https://m.media-amazon.com/images/I/71VrMtcmE9L._AC_UF1000,1000_QL80_.jpg",
+      "favoritados": 780,
+      "author": "Daniel Keyes",
+      "year": 1959,
+      "descriptionCheia": "Em um futuro distópico, os bombeiros queimam livros para controlar a informação e manter a sociedade ignorante. O protagonista, Guy Montag, começa a questionar essa realidade e busca conhecimento.",
+      "descriptionCurta": "Um jovem com QI baixo descobre um tratamento experimental que aumenta sua inteligência, mas com consequências imprevistas.",
+      "categoria": ["Ficção Científica"]
+    },
+    {
+      "id": 5,
+      "title": "Orgulho e Preconceito",
+      "destaque": false,
+      "nota": 8,
+      "image": "https://m.media-amazon.com/images/I/719esIW3D7L._AC_UF1000,1000_QL80_.jpg",
+      "favoritados": 850,
+      "author": "Jane Austen",
+      "year": 1813,
+      "descriptionCheia": "Em um futuro distópico, os bombeiros queimam livros para controlar a informação e manter a sociedade ignorante. O protagonista, Guy Montag, começa a questionar essa realidade e busca conhecimento.",
+      "descriptionCurta": "Um romance clássico que explora temas de amor, sociedade e moralidade na Inglaterra do século XIX, marcado pelo choque inesquecível entre Elizabeth Bennet e o Sr. Darcy.",
+      "categoria": ["Romance", "Clássico"]
+    },
+    {
+      "id": 6,
+      "title": "O Grande Gatsby",
+      "destaque": false,
+      "nota": 9,
+      "image": "https://m.media-amazon.com/images/I/81Ph4QRq1gL._AC_UF1000,1000_QL80_.jpg",
+      "favoritados": 700,
+      "author": "F. Scott Fitzgerald",
+      "year": 1925,
+      "descriptionCheia": "Em um futuro distópico, os bombeiros queimam livros para controlar a informação e manter a sociedade ignorante. O protagonista, Guy Montag, começa a questionar essa realidade e busca conhecimento.",
+      "descriptionCurta": "Um retrato da alta sociedade americana durante os anos 1920, centrado na vida do misterioso milionário Jay Gatsby e seu amor por Daisy Buchanan.",
+      "categoria": ["Romance", "Clássico"]
+    },
+    {
+      "id": 7,
+      "title": "Moby Dick",
+      "destaque": false,
+      "nota": 9,
+      "image": "https://m.media-amazon.com/images/I/712mdW4zCcL._AC_UF1000,1000_QL80_.jpg",
+      "favoritados": 600,
+      "author": "Herman Melville",
+      "year": 1851,
+      "descriptionCheia": "Em um futuro distópico, os bombeiros queimam livros para controlar a informação e manter a sociedade ignorante. O protagonista, Guy Montag, começa a questionar essa realidade e busca conhecimento.",
+      "descriptionCurta": "Uma épica narrativa sobre a obsessão de Ahab com a baleia branca Moby Dick, explorando temas de vingança, natureza e destino.",
+      "categoria": ["Aventura", "Clássico"]
+    },
+    {
+      "id": 8,
+      "title": "Project Hail Mary",
+      "destaque": false,
+      "nota": 9.5,
+      "image": "https://m.media-amazon.com/images/I/91ENQs2KLAL._AC_UF1000,1000_QL80_.jpg",
+      "favoritados": 650,
+      "author": "Andy Weir",
+      "year": 2021,
+      "descriptionCheia": "Em um futuro distópico, os bombeiros queimam livros para controlar a informação e manter a sociedade ignorante. O protagonista, Guy Montag, começa a questionar essa realidade e busca conhecimento.",
+      "descriptionCurta": "Um astronauta preso em uma missão espacial solitária deve usar sua inteligência e criatividade para sobreviver e encontrar um caminho para casa.",
+      "categoria": ["Ficção Científica"]
+    },
+    {
+      "id": 9,
+      "title": "A Biblioteca da Meia-Noite",
+      "destaque": true,
+      "nota": 9.5,
+      "image": "https://m.media-amazon.com/images/I/81iqH8dpjuL.jpg",
+      "favoritados": 750,
+      "author": "Lev Grossman",
+      "year": 2011,
+      "descriptionCheia": "Em um futuro distópico, os bombeiros queimam livros para controlar a informação e manter a sociedade ignorante. O protagonista, Guy Montag, começa a questionar essa realidade e busca conhecimento.",
+      "descriptionCurta": "Uma jovem descobre uma biblioteca secreta que contém livros que podem alterar a realidade, e embarca em uma jornada para descobrir outros realidades de sua vida",
+      "categoria": ["Fantasia", "Aventura"]
+    },
+    {
+      "id": 10,
+      "title": "Revolução dos Bichos",
+      "destaque": false,
+      "nota": 8,
+      "image": "https://m.media-amazon.com/images/I/91BsZhxCRjL._AC_UF1000,1000_QL80_.jpg",
+      "favoritados": 720,
+      "author": "George Orwell",
+      "year": 1945,
+      "descriptionCheia": "Em um futuro distópico, os bombeiros queimam livros para controlar a informação e manter a sociedade ignorante. O protagonista, Guy Montag, começa a questionar essa realidade e busca conhecimento.",
+      "descriptionCurta": "Uma fábula política que critica o totalitarismo e a corrupção do poder, retratada através de animais que se rebelam contra seus humanos opressores.",
+      "categoria": ["Ficção Política", "Clássico"]
+    }
+  ],
+  "criticas": [
+    {
+      "id": 1,
+      "livro_id": 1,
+      "usuario": "Matheus",
+      "nota": 9.5,
+      "comentario": "Um livro incrível que me prendeu do começo ao fim! Pena que acaba :("
+    },
+    {
+      "id": 2,
+      "livro_id": 17,
+      "usuario": "Cláudio",
+      "nota": 0.5,
+      "comentario": "Nunca li algo tão ruim na vida"
+    },
+    {
+      "id": 3,
+      "livro_id": 4,
+      "usuario": "Harry Kane",
+      "nota": 10,
+      "comentario": "Chorei a cada página :("
+    },
+    {
+      "id": 4,
+      "livro_id": 5,
+      "usuario": "Dembele",
+      "nota": 0.5,
+      "comentario": "Pessimo Livro, não recomendo nem pro meu inimigo, nota 0/10"
+    },
+    {
+      "id": 5,
+      "livro_id": 9,
+      "usuario": "Mbappe",
+      "nota": 10,
+      "comentario": "Esse livro me fez sentir coisas que eu não sentia há muito tempo, chorei, ri, me emocionei, recomendo 10/10"
     }
   ]
 }

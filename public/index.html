@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="default">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kubo - Biblioteca Digital</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+    </head>
+    <body>
+        <div class="mesh-glow mesh-glow-1"></div>
+        <div class="mesh-glow mesh-glow-2"></div>
+        <header class="app-header">
+            <div class="header-container">
+                <div class="logo-area">
+                    <i class="fa-solid fa-cube logo-icon" id="cube-icon"></i>
+                    <a
+                        href="https://www.sofascore.com/football/player/takefusa-kubo/880218"
+                        target="_blank"
+                        style="text-decoration: none"
+                        ><h1 class="brand-title">Kubo</h1></a
+                    >
+                </div>
+                <p class="brand-subtitle">
+                    Biblioteca digital dos maiores autores
+                </p>
+            </div>
+        </header>
+
+        <main class="app-main">
+            <div class="container">
+                <section class="controls-panel">
+                    <div class="search-wrapper">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input
+                            type="text"
+                            id="search-input"
+                            placeholder="Buscar livro por título ou autor..."
+                            aria-label="Buscar livros"
+                        />
+                    </div>
+
+                    <div class="filter-wrapper">
+                        <span class="filter-label"
+                            ><i class="fa-solid fa-tags"></i> Categorias</span
+                        >
+                        <div id="category-filters" class="category-tabs">
+                            <button
+                                class="filter-tab active"
+                                data-category="all"
+                            >
+                                Todos
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="books-section">
+                    <div id="card-section" class="books-grid"></div>
+                </section>
+            </div>
+        </main>
+
+        <div id="book-modal" class="modal-overlay hidden">
+            <div class="modal-container">
+                <button
+                    class="modal-close"
+                    id="modal-close-btn"
+                    aria-label="Fechar detalhes"
+                >
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="modal-content-grid">
+                    <div class="modal-cover-side" id="modal-cover">
+                        <div class="cover-glow"></div>
+                        <div class="cover-art">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                    </div>
+                    <div class="modal-info-side">
+                        <div class="modal-header-info">
+                            <div id="modal-tags" class="modal-genres"></div>
+                            <h2 id="modal-title">Título do Livro</h2>
+                            <p id="modal-author" class="book-author-name">
+                                Autor do Livro
+                            </p>
+                        </div>
+                        <div class="modal-stats">
+                            <div class="stat-card">
+                                <span class="stat-icon" id="modal-rating-icon"
+                                    ><i class="fa-solid fa-star"></i
+                                ></span>
+                                <div class="stat-details">
+                                    <span class="stat-value" id="modal-rating"
+                                        >0.0</span
+                                    >
+                                    <span class="stat-label">Nota</span>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-icon"
+                                    ><i class="fa-solid fa-calendar-days"></i
+                                ></span>
+                                <div class="stat-details">
+                                    <span class="stat-value" id="modal-year"
+                                        >0000</span
+                                    >
+                                    <span class="stat-label">Ano</span>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-icon"
+                                    ><i class="fa-solid fa-heart"></i
+                                ></span>
+                                <div class="stat-details">
+                                    <span
+                                        class="stat-value"
+                                        id="modal-favorites"
+                                        >0</span
+                                    >
+                                    <span class="stat-label">Favoritos</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-description-box">
+                            <h3>Sinopse</h3>
+                            <p id="modal-description">
+                                Descrição completa do livro...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="assets/scripts/app.js"></script>
+    </body>
+</html>
