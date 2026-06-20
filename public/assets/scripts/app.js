@@ -3,6 +3,7 @@ const searchInput = document.getElementById("search-input");
 const modal = document.getElementById("book-modal");
 const modalCloseBtn = document.getElementById("modal-close-btn");
 const possibleColors = ["default", "blue", "purple", "yellow"];
+const estatisticaBtn = document.getElementById("estatisticaBtn");
 let allBooks = [];
 let activeCategory = "all";
 let searchQuery = "";
@@ -15,6 +16,10 @@ cubeIcon.addEventListener("click", () => {
   let nextTheme =
     possibleColors[possibleColors.indexOf(currentTheme) + 1] || "default";
   document.documentElement.setAttribute("data-theme", nextTheme);
+});
+
+estatisticaBtn.addEventListener("click", () => {
+  window.location.href = "/data.html";
 });
 
 function createCard(obj) {
