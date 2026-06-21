@@ -18,6 +18,6 @@ Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fu
 
 Realizei a criação de dois gráficos com base no banco de dados fornecido. Os gráficos constam, em ordem, a quantidade de livros por gênero em um gráfico de pizza, e o outro consta a nota de cada livro em um gráfico de barra.
 
-![image](assets/images/image.png)
+![image](public/assets/images/image.png)
 
-![image](assets/images/image1.png)
+![image](public/assets/images/image.png)
