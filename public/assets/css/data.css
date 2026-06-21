@@ -1,0 +1,32 @@
+* {
+    transition: color 0.3s ease-in-out;
+}
+
+main {
+    margin: auto;
+    margin-top: 100px;
+    width: 90%;
+    max-width: var(--container-max-width);
+    padding: 0 1rem;
+}
+
+main > div > h1 {
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    color: var(--accent-color);
+}
+
+#pizza-chart {
+    scale: 90%;
+}
+
+
+.brand-subtitle {
+    font-weight: 100;
+}
+
+.hightlight {
+    font-weight: 800;
+    color: var(--accent-color);
+}
