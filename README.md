@@ -9,15 +9,15 @@ Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fu
 
 ## Informações Gerais
 
-- Nome:
-- Matrícula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Matheus Felipe Costa William
+- Matrícula: 927495
+- Proposta de projeto escolhida: Biblioteca Digital
+- Breve descrição sobre seu projeto: Um biblitoeca digital com livros selecionados pelo usuário
 
 **Print da tela com a implementação**
 
-<< Coloque aqui uma breve explicação da implementação feita nesta etapa>>
+Realizei a criação de dois gráficos com base no banco de dados fornecido. Os gráficos constam, em ordem, a quantidade de livros por gênero em um gráfico de pizza, e o outro consta a nota de cada livro em um gráfico de barra.
 
-<<  COLOQUE A IMAGEM DA TELA 1 AQUI >>
+![image](assets/images/image.png)
 
-<<  COLOQUE A IMAGEM DA TELA 2 AQUI >>
+![image](assets/images/image1.png)
