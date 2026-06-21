@@ -1,21 +1,26 @@
 const chartIcon = document.getElementById("chart-icon")
 const possibleColors = ["default", "blue", "purple", "yellow"]
 const pizzaChart = document.getElementById("pizza-chart")
+const barChart = document.getElementById("bar-chart")
 let categoriasExistentes = new Set()
 async function renderCharts() {
+  const livros = new Array()
+  const livrosNotas = new Array()
   const response = await fetch("/books")
   data = await response.json()
   data.forEach(obj => {
     obj.categoria.forEach(option => {
       categoriasExistentes.add(option)
     })
+    livros.push(obj.title)
+    livrosNotas.push(obj.nota)
   })
-  const quantidadeDeFilmesPorCategoria = new Array(categoriasExistentes.size).fill(0)
+  const quantidadeDeLivrosPorCategoria = new Array(categoriasExistentes.size).fill(0)
   categoriasExistentes = Array.from(categoriasExistentes)
-  for (let i = 0; i < quantidadeDeFilmesPorCategoria.length; i++) {
+  for (let i = 0; i < quantidadeDeLivrosPorCategoria.length; i++) {
     data.forEach(obj => {
       if ((obj.categoria).includes(categoriasExistentes[i])) {
-        quantidadeDeFilmesPorCategoria[i]++
+        quantidadeDeLivrosPorCategoria[i]++
       }
     })
   }
@@ -25,11 +30,21 @@ async function renderCharts() {
       labels: categoriasExistentes,
       datasets: [{
         label: "Gênero de filmes",
-        data: quantidadeDeFilmesPorCategoria,
+        data: quantidadeDeLivrosPorCategoria,
         borderwidth: 1
       }]
     },
-  });
+  })
+  new Chart(barChart, {
+    type: "bar",
+    data: {
+      labels: livros,
+      datasets: [{
+        label: "Notas dos filmes",
+        data: livrosNotas,
+      }]
+    }
+  })
 }
 renderCharts()
 
